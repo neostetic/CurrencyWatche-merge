@@ -106,6 +106,13 @@ public class MainController implements Initializable {
         xAxis.setLabel("Date");
         var yAxis = new NumberAxis();
         yAxis.setLabel("Price (CZK)");
+        updateGraphChart(EURd, 0.0, new Date());
+        updateGraphChart(USDd, 0.0, new Date());
+        updateGraphChart(GBPd, 0.0, new Date());
+        updateGraphChart(CHFd, 0.0, new Date());
+        updateGraphChart(HRKd, 0.0, new Date());
+        updateGraphChart(PLNd, 0.0, new Date());
+        updateGraphChart(HUFd, 0.0, new Date());
         EURd.setName("EUR");
         graph.getData().add(EURd);
         USDd.setName("USD");
